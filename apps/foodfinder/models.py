@@ -4,7 +4,6 @@ import re
 import bcrypt
 from datetime import datetime
 EMAILCHECK = re.compile(r'^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]+$')
-# Create your models here.
 
 class UserManager(models.Manager):
     def checkreg(self, name, email, password, confirm_password):
